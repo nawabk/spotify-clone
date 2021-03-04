@@ -1,0 +1,73 @@
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  flex: 0 0 14%;
+  background-color: $black-color;
+
+  &__img {
+    padding: 2rem;
+  }
+  &__logo {
+    width: 16rem;
+  }
+
+  &__list {
+    padding: 1rem 1.5rem;
+  }
+
+  &__item:not(:first-child) {
+    margin-top: 0.3rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 0.8rem;
+    text-decoration: none;
+    color: $grey-light;
+    transition: all 0.2s;
+    border-radius: 0.5rem;
+
+    span {
+      font-size: 1.5rem;
+    }
+    i {
+      font-size: 2.5rem;
+      margin-right: 2rem;
+      flex-basis: 15%;
+      font-weight: 550;
+    }
+  }
+
+  &__link.active {
+    background-color: $dark-light;
+    color: $white-color;
+  }
+
+  &__link:hover {
+    color: $white-color;
+    cursor: pointer;
+  }
+
+  &__subheading {
+    color: $grey-light;
+    font-size: 1.4rem;
+    padding: 0.5rem 2rem;
+    padding-top: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.main {
+  height: 100vh;
+  overflow-y: auto;
+  background-color: $dark-secondary;
+  width: 100%;
+}

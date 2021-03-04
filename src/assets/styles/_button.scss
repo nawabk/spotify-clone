@@ -1,0 +1,20 @@
+.button__link {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    background-color: $green-primary-color;
+    color: $white-color;
+    padding: 0.9rem 3.5rem;
+    border-radius: 5rem;
+  }
+  transition: background-color 0.2s ease-out, scale 0.2s ease-in;
+  &:hover {
+    background-color: $white-color;
+    color: $dark-primary-color;
+    transform: scale(1.2);
+  }
+}
